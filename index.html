@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Contactanos</title>
-    <link rel="stylesheet" href="style/styles.css"> 
+    <link rel="stylesheet" href="style/styles.css">
 </head>
-<body>
-    
-        <center><img class="logo" src="img/Amazon_logo.svg" alt=""></center>
-        <div class="cont0">
-            
-            <form action="">
-                <h4>Nombre</h4>
-                <input type="email" >
-            </form>
 
+<body>
+
+    <center><img class="logo" src="img/Amazon_logo.svg" alt="">
+
+        <div class="cont0">
+            <h3>Contactanos</h3>
+            <form action="">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" placeholder="juanito@gmail.com">
+                <br>
+                <br>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="nombre" placeholder="juanito gomez">
+
+                <h4>Razon</h4>
+                <div style="display: flex; flex-direction: row;">
+                    <input type="radio" id="queja" name="queja" value="queja">
+                    <label for="queja">Queja</label>
+                    <input type="radio" id="agrad" name="agrad" value="agrad">
+                    <label for="agrad">Agradecimiento</label>
+                    <input type="radio" id="acla" name="acla" value="acla">
+                    <label for="acla">Aclaracion</label>
+                </div>
+                <h4>Detalles</h4>
+                <textarea name="Detalles" id="Detalles"></textarea>
+                <h4>¿Como nos conociste?</h4>
+                
+            </form>
         </div>
+    </center>
 </body>
+
 </html>
