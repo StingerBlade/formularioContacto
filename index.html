@@ -15,27 +15,35 @@
         <div class="cont0">
             <h3>Contactanos</h3>
             <form action="">
-                <label for="email">Email</label>
+    <label for="email" >Email</label>
                 <br>
-                <input type="email" placeholder="juanito@gmail.com">
+                <input style="  border: none; border-bottom: 2px solid black;" type="email" placeholder="juanito@gmail.com">
                 <br>
                 <br>
                 <label for="nombre">Nombre</label>
                 <br>
-                <input type="nombre" placeholder="juanito gomez">
+                <input style="  border: none; border-bottom: 2px solid black;" type="nombre" placeholder="juanito gomez">
 
                 <h4>Razon</h4>
                 <div style="display: flex; flex-direction: row;">
-                    <input type="radio" id="queja" name="queja" value="queja">
+                    <input type="radio" id="queja" name="razon" value="queja">
                     <label for="queja">Queja</label>
-                    <input type="radio" id="agrad" name="agrad" value="agrad">
+                    <input type="radio" id="agrad" name="razon" value="agrad">
                     <label for="agrad">Agradecimiento</label>
-                    <input type="radio" id="acla" name="acla" value="acla">
+                    <input type="radio" id="acla" name="razon" value="acla">
                     <label for="acla">Aclaracion</label>
                 </div>
                 <h4>Detalles</h4>
                 <textarea name="Detalles" id="Detalles"></textarea>
                 <h4>¿Como nos conociste?</h4>
+                <select id="como_conocio" name="como_conocio">
+                    <option value="aun_no">Aún no</option>
+                    <option value="internet">Internet</option>
+                    <option value="recomendacion">Recomendación</option>
+                </select>
+                <br>
+                <br>
+                <input style="margin-bottom: 10%;" type="submit" value="Enviar">
                 
             </form>
         </div>
